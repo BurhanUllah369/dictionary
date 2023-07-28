@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background-color: blueviolet;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    width: 40%;
+    height: auto;
+    padding: 50px 40px;
+    border-radius: 12px;
+    margin: 100px auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.form {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+input {
+    flex: 3;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    border-bottom: 3px solid blueviolet;
+    padding: 10px;
+}
+
+button {
+    flex: 1;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.word {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+i {
+    color: blueviolet;
+}
+
+p {
+    margin-top: 15px;
+}
+
+.gray {
+    color: lightgray;
+}
+
+
+.sent {
+    font-style: italic;
+    border-left: 4px solid blueviolet;
+    padding-left: 20px;
+    color: rgb(100, 100, 100);
+}
+
+
+.error {
+    font-size: 24px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    .wrapper {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: white;
+    }
+
+    .wrapper {
+        width: 100%;
+        border-radius: 0;
+        margin-top: 50px;
+    }
+}
